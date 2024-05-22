@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rian Assignment Calculator</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="section">
+            <h1>Triangle Calculator</h1>
+            <p>
+                Aplikasi Kalkulator Segitiga sederhana yang bisa membantu untuk menghitung Luas dan Keliling Segitiga
+                <br/>Semoga Bermanfaat..
+            </p>
+        </div>
+        <div class="section-content">
+            <h2>Segitiga</h2>
+        </div>
+
+        <button class="buttonSegitiga" id="luasSegitiga" onclick="hideOrshow()">Luas Segitiga</button>
+        <button class="buttonSegitiga" id="kelilingSegitiga" onclick="hideOrshow()">Keliling Segitiga</button>
+        <hr>
+<section id="luasSection">
+    <section>
+        <div class="judul">
+            <h2>Luas Segitiga</h2>
+        </div>
+        <div class="formula-img">
+            <img src="https://cdn-brilio-net.akamaized.net/real/2023/10/16/2130004/rumus-luas-segitiga-sama-sisi.png">
+        </div>
+            <p>Rumus luas segitiga yaitu:</p>
+            <p style="text-align: center;"><b>L = 1/2 x a x t</b></p>
+            <p>Dimana :
+            <br/>L = Luas
+            <br/>a = Panjang Alas
+            <br/>t = Tinggi
+            </p>
+    </section>
+    <section>
+        <header>
+            <center><h1>Hitung Luas Segitiga</h1></center>
+            <input type="number" id="alas" placeholder=" Nilai Alas.."><br>
+            <input type="number" id="tinggi" placeholder=" Nilai Tinggi.."><br>
+            <div id="outputLuas"></div>
+            <center><button class="buttonHitung" id="hitungLuas">Hitung</button></center>
+            <button class="buttonReset" id="resetLuas">Reset</button>
+        </header>
+    </section>
+</section>
+    <hr>
+<section id="kelilingSection">
+    <section>
+        <div class="judul">
+            <h2>Keliling Segitiga</h2>
+        </div>
+        <div class="formula-img">
+            <img src="https://cdn-brilio-net.akamaized.net/real/2023/10/16/2130004/rumus-luas-segitiga-sama-sisi.png">
+        </div>
+            <p>Rumus luas segitiga yaitu:</p>
+            <p style="text-align: center;"><b>K = S1 + S2 + S3</b></p>
+            <p>Dimana :
+            <br/>K = Keliling
+            <br/>S1 = Sisi A
+            <br/>S2 = Sisi B
+            <br/>S3 = Sisi C
+            </p>
+    </section>
+    <section>
+        <header>
+            <center><h1>Hitung Keliling Segitiga</h1></center>
+            <input type="number" id="sisia" placeholder=" Nilai Sisi A.."><br>
+            <input type="number" id="sisib" placeholder=" Nilai Sisi B.."><br>
+            <input type="number" id="sisic" placeholder=" Nilai Sisi C.."><br>
+            <div id="outputKeliling"></div>
+            <center><button class="buttonHitung" id="hitungKeliling">Hitung</button></center>
+            <button class="buttonReset" id="resetKeliling">Reset</button>
+        </header>
+    </section>
+    <hr>
+</section>
+    <script src="js/script.js"></script>
+</body>
+</html>
